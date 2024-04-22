@@ -7,7 +7,7 @@ import Section from "@/templates/Section.astro"
 <Section title="Projects">
   <div class="cards">
     {
-      projects.map(({ name, summary, image, tools }) => {
+      projects.map(({ name, summary, image, tools, urlCode, urlDemo}) => {
 
         return(
         <div class="card">
@@ -26,6 +26,10 @@ import Section from "@/templates/Section.astro"
           <picture>
             <img src={image} alt={name} />
           </picture>
+          <div class="buttons">
+            <a class="button" href={urlCode} target="_blank">Code</a>
+            <a class="button" href={urlDemo} target="_blank">Web site</a>
+          </div>
         </div>
         )
       })
@@ -85,6 +89,29 @@ import Section from "@/templates/Section.astro"
   img {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button {
+    display: block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 2px solid #DB0A5B;
+  }
+
+  .button:hover {
+    transition: all 300ms ease 0ms;
+    background-color: #DB0A5B;
+  }
+
+  .button:first-child {
+    margin-right: 10px;
   }
 
   @media (min-width: 576px) {

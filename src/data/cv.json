@@ -100,10 +100,26 @@
   }],
   "projects": [{
     "name": "Libraries Melbourne",
-    "summary": "asdasdad aasda adsada",
-    "image": "",
-    "tools": ["HTML5", "CSS3", "Typescript", "React"],
+    "summary": "This website is inspired by the public libraries of Melbourne, Australia. In this demo I only mention 08 libraries.",
+    "image": "/project1_desktop.jpg",
+    "tools": ["HTML5", "Sass", "Typescript", "React"],
     "urlCode": "https://github.com/lidiaramirezn/libraries-melbourne-react",
     "urlDemo": "https://lidiaramirezn.github.io/libraries-melbourne-react/"
+  }, 
+  {
+    "name": "Rick Morty",
+    "summary": "Rick and Morty character web application in Spanish/English.",
+    "image": "/project2_desktop.jpg",
+    "tools": ["HTML5", "CSS3", "Javascript", "React"],
+    "urlCode": "https://github.com/lidiaramirezn/rick-morty-react",
+    "urlDemo": "https://lidiaramirezn.github.io/rick-morty-react/"
+  }, 
+  {
+    "name": "Web design",
+    "summary": "Store design created with CSS architecture and component creation",
+    "image": "/project3_desktop.jpg",
+    "tools": ["Angular", "Typescript", "Sass"],
+    "urlCode": "https://github.com/lidiaramirezn/web-design-angular",
+    "urlDemo": "https://web-design-angular.vercel.app/"
   }]
 }

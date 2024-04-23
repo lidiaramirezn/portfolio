@@ -5,13 +5,15 @@ import Arrow from '@/atoms/Arrow.astro'
 import Linkedin from '@/atoms/Linkedin.astro'
 import Github from '@/atoms/Github.astro'
 import Wave from "@/atoms/Wave.astro"
+import CV from "@/atoms/CV.astro"
+import Cover from "@/atoms/Cover.astro"
 
 const { name, labels, intro } = basics
 ---
 <section>
   <div class="container"></div>
-  <h1>{name}</h1>
-  <div class="labels-animation">
+  <h1 class="animated fadeInDown">{name}</h1>
+  <div class="labels-animation animated fadeIn">
     <ul>
       {
         labels.map((label) => (
@@ -20,7 +22,7 @@ const { name, labels, intro } = basics
       }
     </ul>
   </div>
-  <p class="intro">
+  <p class="intro animated fadeInUp">
     {intro}
   </p>
   <div class="call-action__wrapper">
@@ -29,14 +31,24 @@ const { name, labels, intro } = basics
     </div>
   </div>
   <div class="social-media">
-    <div>
+    <div class="animated fadeInUpBig">
       <a target="_blank" href="https://www.linkedin.com/in/lidiaramirezn/">
         <Linkedin />
       </a>
     </div>
-    <div>
+    <div class="animated fadeInUpBig">
       <a target="_blank" href="https://github.com/lidiaramirezn">
         <Github />
+      </a>
+    </div>
+    <div class="animated fadeInUpBig">
+      <a target="_blank" href="https://drive.google.com/file/d/1uyiIFAGJGKMlcsmwwYkpkyECRJIKzChq/view?usp=drive_link">
+        <CV />
+      </a>
+    </div>
+    <div class="animated fadeInUpBig">
+      <a target="_blank" href="https://drive.google.com/file/d/1e3d8ua1tnzxOX7CM_TOJIN7yCNm1Lz6r/view?usp=sharing">
+        <Cover />
       </a>
     </div>
   </div>
@@ -95,8 +107,12 @@ const { name, labels, intro } = basics
     z-index: 100;
   }
 
-  .social-media > div:first-child {
+  .social-media > div {
     margin-right: 20px;
+  }
+
+  .social-media > div:last-child {
+    margin-right: 0;
   }
 
   .call-action__wrapper {

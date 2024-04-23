@@ -3,10 +3,36 @@ import Section from "@/templates/Section.astro"
 ---
 
 <Section title="About me">
-  <p>
-    I have been a web development professional for more than 5 years, throughout my experience I have worked with different frontend technologies, I have strengthened my knowledge in my role but also learned from my colleagues and the agile methodologies with which we work in this times.
-  </p>
+
+  <div class="content">
+<!--     <img src="/photo.jpg" alt="">
+ -->    <p>
+      I have been a web development professional for more than 5 years, throughout my experience I have worked with different frontend technologies, I have strengthened my knowledge in my role but also learned from my colleagues and the agile methodologies with which we work in this times.
+    </p>
+  </div>
 </Section>
 <style>
-  
+
+  .content {
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  @media (min-width: 768px) {
+
+    .content {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  /* img {
+    max-width: 200px;
+    margin-right: 30px;
+  }
+  @media (min-width: 768px) {
+    .content {
+      display: flex;
+    }
+  } */
 </style>

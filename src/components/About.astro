@@ -1,14 +1,15 @@
 ---
 import Section from "@/templates/Section.astro"
+import { aboutMe } from "@/data/cv.json"
+
+const { title, summary } = aboutMe
 ---
 
-<Section title="About me">
+<Section title={title}>
 
   <div class="content">
-<!--     <img src="/photo.jpg" alt="">
- -->    <p>
-      I have been a web development professional for more than 5 years, throughout my experience I have worked with different frontend technologies, I have strengthened my knowledge in my role but also learned from my colleagues and the agile methodologies with which we work in this times.
-    </p>
+    <!--     <img src="/photo.jpg" alt="">-->    
+    <p> {summary} </p>
   </div>
 </Section>
 <style>

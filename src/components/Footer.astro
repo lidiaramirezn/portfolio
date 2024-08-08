@@ -1,5 +1,10 @@
+---
+import { footer } from "@/data/cv.json";
+
+const { summary, summary2 } = footer
+---
 <footer>
-  <p>Designed and built with all the love in the world <span class='footer__made'>by Lidia Ramirez</span></p>
+  <p> {summary} <span class='footer__made'>{ summary2}</span></p>
 </footer>
 <style>
     footer {

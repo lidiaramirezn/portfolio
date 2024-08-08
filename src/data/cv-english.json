@@ -1,24 +1,24 @@
 {
   "basics": {
-    "name": "Lidia Ramirez", 
+    "name": "Lidia Ramirez",
     "labels": ["Front-end developer", "Web Developer", "Web UI Developer"],
     "image": "",
-    "intro": "Me apasiona el mundo de la tecnología, me gusta crear páginas con una buena experiencia de usuario.",
+    "intro": "I am passionate about the world of technology, I like to create pages with a good user experience",
     "linkedin": "https://www.linkedin.com/in/lidiaramirezn/",
     "github": "https://www.github.com/lidiaramirezn",
-    "linkCV": "https://drive.google.com/file/d/1aFYwUZ_GhO5-mfkIDqNWWUhJ8Mf0bpth/view?usp=drive_link",
-    "linkCoverLetter": "https://drive.google.com/file/d/1e3d8ua1tnzxOX7CM_TOJIN7yCNm1Lz6r/view?usp=sharing",
+    "linkCV": "https://drive.google.com/file/d/1uyiIFAGJGKMlcsmwwYkpkyECRJIKzChq/view?usp=drive_link",
+    "linkCoverLetter": "https://drive.google.com/file/d/1sVTNUNHm8828EnW5ZyjgL-78od9JUDVr/view?usp=sharing",
     "email": "",
     "phone": "",
     "summary": "",
     "location": {
       "postalCode": "",
-      "city": ""
+      "city": "Piura"
     }
   },
   "aboutMe": {
-    "title": "Sobre mí",
-    "summary": "Soy profesional del desarrollo web desde hace más de 5 años, a lo largo de mi experiencia he trabajado con diferentes tecnologías frontend, he fortalecido mis conocimientos en mi rol pero también aprendido de mis compañeros y de las metodologías ágiles con la que se trabaja en estos tiempos."
+    "title": "About me",
+    "summary": "I have been a web development professional for more than 5 years, throughout my experience I have worked with different frontend technologies, I have strengthened my knowledge in my role but also learned from my colleagues and the agile methodologies with which we work in this times."
   },
   "work": [{
     "name": "",
@@ -41,7 +41,7 @@
     ]
   }],
   "education": [{
-    "institution": "",
+    "institution": "University",
     "area": "Software Development",
     "studyType": "Bachelor",
     "startDate": "",
@@ -81,11 +81,11 @@
     "reference": ""
   }],
   "projects": {
-    "title": "Proyectos",
-    "subtitle": "Tecnologías",
+    "title": "Projects",
+    "subtitle": "Technologies",
     "items": [{
-      "name": "Bibliotecas Melbourne",
-      "summary": "Este sitio web está inspirado en las bibliotecas públicas de Melbourne, Australia. En esta demo solo menciono 08 bibliotecas.",
+      "name": "Libraries Melbourne",
+      "summary": "This website is inspired by the public libraries of Melbourne, Australia. In this demo I only mention 08 libraries.",
       "image": "/project1_desktop.jpg",
       "tools": ["HTML5", "Sass", "Typescript", "React"],
       "urlCode": "https://github.com/lidiaramirezn/libraries-melbourne-react",
@@ -93,7 +93,7 @@
     }, 
     {
       "name": "Rick Morty",
-      "summary": "Aplicación web de personajes de Rick y Morty en español/inglés.",
+      "summary": "Rick and Morty character web application in Spanish/English.",
       "image": "/project2_desktop.jpg",
       "tools": ["HTML5", "CSS3", "Javascript", "React"],
       "urlCode": "https://github.com/lidiaramirezn/rick-morty-react",
@@ -101,7 +101,7 @@
     }, 
     {
       "name": "Web design",
-      "summary": "Diseño de tienda creado con arquitectura CSS y creación de componentes.",
+      "summary": "Store design created with CSS architecture and component creation",
       "image": "/project3_desktop.jpg",
       "tools": ["Angular", "Typescript", "Sass"],
       "urlCode": "https://github.com/lidiaramirezn/web-design-angular",
@@ -109,7 +109,7 @@
     }]
   },
   "footer": {
-    "summary": "Diseñado y construido con amor ",
-    "summary2": "por Lidia Ramirez"
+    "summary": "Designed and built with love ",
+    "summary2": "by Lidia Ramirez"
   }
 }

@@ -1,6 +1,5 @@
 ---
 import { basics } from "@/data/cv.json"
-// import { basics } from "@cv"
 import Arrow from '@/atoms/Arrow.astro'
 import Linkedin from '@/atoms/Linkedin.astro'
 import Github from '@/atoms/Github.astro'
@@ -8,7 +7,7 @@ import Wave from "@/atoms/Wave.astro"
 import CV from "@/atoms/CV.astro"
 import Cover from "@/atoms/Cover.astro"
 
-const { name, labels, intro } = basics
+const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basics
 ---
 <section>
   <div class="container"></div>
@@ -25,31 +24,31 @@ const { name, labels, intro } = basics
   <p class="intro animated fadeInUp">
     {intro}
   </p>
-  <div class="call-action__wrapper">
-    <div class="call-action">
-      <Arrow />
-    </div>
-  </div>
   <div class="social-media">
     <div class="animated fadeInUpBig">
-      <a target="_blank" href="https://www.linkedin.com/in/lidiaramirezn/">
+      <a target="_blank" href={linkedin}>
         <Linkedin />
       </a>
     </div>
     <div class="animated fadeInUpBig">
-      <a target="_blank" href="https://github.com/lidiaramirezn">
+      <a target="_blank" href={github}>
         <Github />
       </a>
     </div>
     <div class="animated fadeInUpBig">
-      <a target="_blank" href="https://drive.google.com/file/d/1uyiIFAGJGKMlcsmwwYkpkyECRJIKzChq/view?usp=drive_link">
+      <a target="_blank" href={linkCV}>
         <CV />
       </a>
     </div>
     <div class="animated fadeInUpBig">
-      <a target="_blank" href="https://drive.google.com/file/d/1e3d8ua1tnzxOX7CM_TOJIN7yCNm1Lz6r/view?usp=sharing">
+      <a target="_blank" href={linkCoverLetter}>
         <Cover />
       </a>
+    </div>
+  </div>
+  <div class="call-action__wrapper">
+    <div class="call-action">
+      <Arrow />
     </div>
   </div>
   <div class="wave">

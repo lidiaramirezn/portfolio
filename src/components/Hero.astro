@@ -21,41 +21,45 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
       }
     </ul>
   </div>
-  <p class="intro animated fadeInUp">
+  <p class="intro animated fadeInDown">
     {intro}
   </p>
   <div class="social-media">
-    <div class="animated fadeInUpBig">
+    <div class="animated fadeInDownBig">
       <a target="_blank" href={linkedin} rel="noopener noreferrer">
         <Linkedin />
       </a>
     </div>
-    <div class="animated fadeInUpBig">
+    <div class="animated fadeInDownBig">
       <a target="_blank" href={github} rel="noopener noreferrer">
         <Github />
       </a>
     </div>
-    <div class="animated fadeInUpBig">
+    <div class="animated fadeInDownBig">
       <a target="_blank" href={linkCV} rel="noopener noreferrer">
         <CV />
       </a>
     </div>
-    <div class="animated fadeInUpBig">
+    <div class="animated fadeInDownBig">
       <a target="_blank" href={linkCoverLetter} rel="noopener noreferrer">
         <Cover />
       </a>
     </div>
   </div>
   <div class="call-action__wrapper">
-    <div class="call-action">
+    <div class="call-action" id="arrow">
       <Arrow />
     </div>
   </div>
   <div class="wave">
-    <Wave />
+    <Wave/>
   </div>
 </section>
-
+<script>
+  document.getElementById('arrow')?.addEventListener('click', ()=> {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  })
+</script>
 <style>
   section {
     position: relative;

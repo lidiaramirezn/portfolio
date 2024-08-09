@@ -4,23 +4,29 @@ import { aboutMe } from "@/data/cv.json"
 
 const { title, summary } = aboutMe
 ---
+<div class="about" id="about">
 
-<Section title={title}>
-
-  <div class="content">
-    <!--     <img src="/photo.jpg" alt="">-->    
-    <p> {summary} </p>
-  </div>
-</Section>
+  <Section title={title} >
+  
+    <div class="content">
+      <!--     <img src="/photo.jpg" alt="">-->    
+      <p> {summary} </p>
+    </div>
+  </Section>
+</div>
 <style>
-
+  .about {
+    margin-top: 30px;
+  }
   .content {
     font-size: 1em;
     line-height: 1.3em;
   }
 
   @media (min-width: 768px) {
-
+    .about {
+      margin-top: 100px;
+    }
     .content {
       font-size: 18px;
       line-height: 24px;

@@ -12,6 +12,7 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
 <section>
   <div class="container"></div>
   <h1 class="animated fadeInDown">{name}</h1>
+  <img class="sticker" src="sticker.svg" alt="">
   <div class="labels-animation animated fadeIn">
     <ul>
       {
@@ -56,8 +57,9 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
   </div>
 </section>
 <script>
+  const sectionNext = document.getElementById('about');
   document.getElementById('arrow')?.addEventListener('click', ()=> {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   })
 </script>
 <style>
@@ -80,6 +82,19 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
     color: #FF9900;
   }
 
+  .sticker {
+    max-width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: 4s ease-in-out 0s infinite normal none running animation-float;
+  }
+
+  @keyframes animation-float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
   .label {
     color: #DB0A5B;
     font-family: "Jersey 10", sans-serif;
@@ -100,12 +115,12 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
     max-width: 500px;
     padding: 0 20px;
     margin-top: 8px;
-    font-size: 1em;
+    font-size: 14px;
   }
 
   .social-media {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     color: #DB0A5B;
     z-index: 100;
   }
@@ -164,6 +179,10 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
   }
 
   @media (min-width: 576px) {
+
+    .sticker {
+      max-width: 200px;
+    }
     h1 {
       font-size: 4em;
     }

@@ -121,7 +121,7 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
   .social-media {
     display: flex;
     margin-top: 30px;
-    color: #DB0A5B;
+    color: #FF9900;
     z-index: 100;
   }
 
@@ -214,5 +214,28 @@ const { name, labels, intro, linkedin, github, linkCV, linkCoverLetter } = basic
     85% {margin-top: -46px;}
     95% {margin-top: -46px;}
     100% {margin-top: 0px;}
+  }
+
+  @media (max-height: 700px) {
+    h1 {
+      font-size: 3em;
+    }
+
+    .sticker {
+      max-width: 110px;
+    }
+
+    .intro {
+      font-size: 1em;
+    }
+
+    .call-action__wrapper {
+      bottom: 20px;
+    }
+
+    .call-action {
+      width: 55px;
+      height: 55px;
+    }
   }
 </style>

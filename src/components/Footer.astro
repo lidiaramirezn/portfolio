@@ -1,10 +1,12 @@
 ---
+import CodeHeart from "@/atoms/CodeHeart.astro";
 import { footer } from "@/data/cv.json";
 
 const { summary, summary2 } = footer
 ---
 <footer>
-  <p> {summary} <span class='footer__made'>{ summary2}</span></p>
+  <p> {summary} <span class='footer__made'>{ summary2}</span>&nbsp;</p>
+  <CodeHeart/>
 </footer>
 <style>
     footer {

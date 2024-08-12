@@ -3,14 +3,15 @@ const { title } = Astro.props
 ---
 
 <section class="content">
-  {title && <h2 class="title">{title}</h2>}
-  <slot />
+  
+  {title && <h2 class="title"><slot name="icon"/> &nbsp; {title}</h2>}
+  <slot name="content"/>
 </section>
 
 <style>
   .content {
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -18,5 +19,7 @@ const { title } = Astro.props
     font-size: 2em;
     margin-bottom: 40px;
     color: #FF9900;
+    display: flex;
+    align-items: center;
   }
 </style>

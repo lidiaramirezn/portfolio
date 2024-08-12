@@ -1,14 +1,17 @@
 ---
 import Section from "@/templates/Section.astro"
 import { aboutMe } from "@/data/cv.json"
+import User from "@/atoms/User.astro"
 
 const { title, summary } = aboutMe
 ---
 <div class="about" id="about">
 
   <Section title={title} >
-  
-    <div class="content">
+    <span slot="icon">
+      <User />
+    </span>
+    <div slot="content" class="content">
       <img src="/photo.jpg" alt="" class="about__photo">   
       <p class="about__summary"> {summary} </p>
     </div>

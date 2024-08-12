@@ -1,4 +1,8 @@
 ---
+import ProjectIcon from "@/atoms/ProjectIcon.astro"
+import Code from "@/atoms/Code.astro"
+
+import Site from "@/atoms/Site.astro"
 import { projects } from "@/data/cv.json"
 import Section from "@/templates/Section.astro"
 
@@ -6,7 +10,10 @@ const { title, subtitle, items } = projects
 ---
 
 <Section title={title}>
-  <div class="cards">
+  <span slot="icon">
+    <ProjectIcon />
+  </span>
+  <div class="cards" slot="content" id="section-project">
     {
       items.map(({ name, summary, image, tools, urlCode, urlDemo}) => {
 
@@ -24,12 +31,14 @@ const { title, subtitle, items } = projects
               }
             </ul>
           </div>
-          <picture>
-            <img src={image} alt={name} />
-          </picture>
-          <div class="buttons">
-            <a class="button" href={urlCode} target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="button" href={urlDemo} target="_blank" rel="noopener noreferrer">Web site</a>
+          <div class="card__container">
+            <picture>
+              <img src={image} alt={name} />
+            </picture>
+            <div class="buttons">
+              <a class="button" href={urlCode} target="_blank" rel="noopener noreferrer">Code <span class="button__icon">&nbsp; <Code/></span></a>
+              <a class="button" href={urlDemo} target="_blank" rel="noopener noreferrer">Web site <span class="button__icon">&nbsp;<Site/></span></a>
+            </div>
           </div>
         </div>
         )
@@ -49,7 +58,7 @@ const { title, subtitle, items } = projects
   }
   .card {
     cursor: pointer;
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 5px;
     padding: 20px 20px 40px;
     transition: transform 300ms ease 0ms;
@@ -89,7 +98,7 @@ const { title, subtitle, items } = projects
 
   img {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(219, 10, 91, 0.7);
   }
 
   .buttons {
@@ -104,6 +113,8 @@ const { title, subtitle, items } = projects
     padding: 6px 15px;
     border-radius: 20px;
     border: 2px solid #DB0A5B;
+    display: flex;
+    justify-content: center;
   }
 
   .button:hover {
@@ -117,18 +128,23 @@ const { title, subtitle, items } = projects
 
   @media (min-width: 576px) {
     .cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      /* display: grid;
+      grid-template-columns: repeat(2, 1fr); */
       grid-gap: 20px;
       justify-items: center;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 768px) {
     .cards {
       justify-content: center;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      /* display: grid;
+      grid-template-columns: repeat(3, 1fr); */
       grid-gap: 20px;
       justify-items: center;
     }
